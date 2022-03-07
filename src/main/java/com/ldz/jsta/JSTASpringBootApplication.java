@@ -15,18 +15,18 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * SpringBoot配置文件地址：    resources/application.properties
  * log日志配置文件地址：     resources/log4j2.xml
  */
+
 @SpringBootApplication
 @EnableTransactionManagement
 @ServletComponentScan
-@MapperScan("com.ldz.jsta.dao")
+@MapperScan("com.ldz.jsta.mapper")
 public class JSTASpringBootApplication extends SpringBootServletInitializer {
-
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
         return builder.sources(JSTASpringBootApplication.class);
     }
-
     public static void main(String[] args) {
-        SpringApplication.run(JSTASpringBootApplication.class,args);
+        SpringApplication.run(JSTASpringBootApplication.class, args);
     }
+
 }

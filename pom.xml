@@ -90,6 +90,10 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-log4j2</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+    </dependency>
 
     <!-- log4j2 -->
     <dependency>
@@ -133,8 +137,13 @@
       <version>0.1.4</version>
       <scope>compile</scope>
     </dependency>
+    <!--Mybatis-plus苞米豆-->
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus-boot-starter</artifactId>
+      <version>3.3.1</version>
+    </dependency>
   </dependencies>
-
 
 
   <build>

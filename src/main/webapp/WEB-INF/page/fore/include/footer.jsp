@@ -17,16 +17,14 @@
         </p>
         <p class="footertwo">
             <a href="http://www.alibabagroup.com/cn/global/home" target="_blank">架上添安集体</a>
-            <a href="http://www.taobao.com" target="_blank">淘宝网</a>
-            <a href="http://www.tmall.com/" target="_blank">天猫</a>
+            <a href="http://www.taobao.com" target="_blank">淘宝店铺</a>
+            <a href="http://www.tmall.com/" target="_blank">天猫店铺</a>
             <a href="https://www.alipay.com" target="_blank">支付宝</a>
         </p>
         <div class="copyright">
             <span>© 2022 LDZ Team</span>
             <a href="https://license.coscl.org.cn/MulanPSL/" target="_blank">Mulan PSL v1</a>
             <a href="https://xianqu.fun/" target="_blank" class="link_normal">关于LDZ(李董郑)</a>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;你知道什么是996.ICU吗？</span>
-            <a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu"/></a>
             <br/>
             <span style="font-weight: bold;">正在开发</span>
             <br/>

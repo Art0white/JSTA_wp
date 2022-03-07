@@ -1,0 +1,139 @@
+.header {
+    width: 1270px;
+    height: 100px;
+    margin: auto;
+    background-color: #FFFF;
+}
+
+.header > img {
+    float: left;
+    width: 260px;
+    height: 100px;
+}
+
+.header > .our-navbar {
+    width: 600px;
+    /*padding-top: 30px;*/
+    float: left;
+    padding-left: 45px;
+    /*margin: auto;*/
+}
+
+.our-navbar > .nav_li {
+    height: 100px;
+    position: absolute;
+}
+
+.our-navbar > .nav_li > li {
+    height: 100px;
+    float: left;
+    position: relative;
+}
+
+.our-navbar > .nav_li > li > .home-nav-menu {
+    height: auto;
+    position: relative;
+}
+
+.home-nav-menu-hover {
+    background: #ffffff;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #ffffff;
+}
+
+.our-navbar > .nav_li > li > .home-nav-menu > a {
+    height: 70px;
+    cursor: pointer;
+    float: left;
+    padding: 0 20px;
+    /*font-weight: 500;*/
+    padding-top: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    color: #333333;
+    letter-spacing: normal;
+    position: relative;
+    line-height: 37px;
+}
+
+.our-navbar > .nav_li > li > .home-nav-menu > a:hover {
+    /*color: #FF0036;*/
+    /*font-size: 18px;*/
+    /*font-weight: bold;*/
+    text-decoration: none;
+}
+
+
+
+
+.header > .mallSearch {
+    width: 350px;
+    padding-top: 30px;
+    float: right;
+    /*padding-right: 20px;*/
+}
+
+.mallSearch > form {
+    border: 2px solid #505053;/*#FF0036*/
+    border-right: 0;
+}
+
+.mallSearch .mallSearch-input {
+    height: 36px;
+    clear: both;
+}
+
+.mallSearch-input > .header_search_input {
+    float: left;
+    height: 36px;
+    width: 250px;
+    font: 14px '宋体';
+    box-sizing: border-box;
+    outline: none;
+    color: #505053;
+    margin: 0;
+    padding: 5px 3px 5px 5px;
+    vertical-align: middle;
+    border: 0;
+}
+
+.mallSearch-input > .header_search_button {
+    float: right;
+    width: 98px;
+    height: 38px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    background-color: #505053;
+    cursor: pointer;
+    color: #ffffff;
+    border: 0;
+}
+
+.mallSearch > ul {
+    height: 24px;
+    font-size: 14px;
+    padding: 4px 0 0;
+    margin-left: -10px;
+    overflow: hidden;
+    width: 100%;
+    list-style: none;
+}
+
+.mallSearch > ul > li {
+    font-family: '宋体', sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 1.1;
+    padding: 0 8px 0 12px;
+}
+
+.mallSearch > ul > li > a {
+    color: #999999;
+}
+
+.mallSearch li + li {
+    border-left: 1px solid #cccccc;
+}

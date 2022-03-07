@@ -249,9 +249,7 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal" id="btn-close">关闭</button>
             </div>
         </div>
-        <%-- /.modal-content %--%>
     </div>
-    <%-- /.modal %--%>
 </div>
 <div class="loader"></div>
 </body>
