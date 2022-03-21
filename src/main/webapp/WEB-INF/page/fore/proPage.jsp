@@ -10,6 +10,7 @@
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 	<title>架上添安-安防产品领导者</title>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/res/js/js_z.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/res/js/fore/fore_proPage.js"></script>
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/res/css/fore/form_new/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/res/css/fore/form_new/thems.css">
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/res/css/fore/form_new/responsive.css">
@@ -90,21 +91,20 @@
 <%--					</div>--%>
 <%--				</li>--%>
 			</ul>
-			<div class="space_hx">&nbsp;</div>
-			<div class="pages">
-				<a href="" class="bg">上一页</a>
-				<a href="" class="now">1</a>
-				<a href="">2</a>
-				<a href="">3</a>
-				<a href="">4</a>
-				<a href="">5</a>
-				<a href="">……</a>
-				<a href="" class="bg">下一页</a>
-			</div>
+<%--			<div class="space_hx">&nbsp;</div>--%>
+<%--			<div class="pages">--%>
+<%--				<a href="" class="bg">上一页</a>--%>
+<%--				<a href="" class="now">1</a>--%>
+<%--				<a href="">2</a>--%>
+<%--				<a href="">3</a>--%>
+<%--				<a href="">4</a>--%>
+<%--				<a href="">5</a>--%>
+<%--				<a href="">……</a>--%>
+<%--				<a href="" class="bg">下一页</a>--%>
+<%--			</div>--%>
 		</div>
 	</div>
 </div>
 <%@ include file="include/footer.jsp" %>
-<script type="text/javascript" src="${pageContext.request.contextPath}/res/js/fore/fore_proPage.js"></script>
 </body>
 

@@ -31,6 +31,10 @@ public class NewsController {
         return newsService.getNews();
     }
 
+    @RequestMapping("/getNewsDtl")
+    public RespBean getNewsDtl(){
+        return newsService.getNews();
+    }
     /**
      * 添加新闻内容
      * @param newsTitle

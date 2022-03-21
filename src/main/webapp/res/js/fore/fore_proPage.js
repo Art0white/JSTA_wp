@@ -5,6 +5,7 @@ $(function (){
         url: "/jsta/category/getCategorys",
         data: {},
         dataType: "json",
+        async: false,
         success: function (data) {
             if (data.code === 200) {
                 cateArr = data.object;
@@ -44,6 +45,7 @@ $(function (){
         url: "/jsta/product/getProductByCategoryId",
         data: {"categoryId": categoryId},
         dataType: "json",
+        async: false,
         success: function (data) {
             if (data.code === 200) {
                 var div1 = document.getElementById("r_title");
@@ -58,7 +60,7 @@ $(function (){
                 for(let i = 0; i < shopingArr.length; i++) {
                     var li = document.createElement("li");
                     li.id = "li" + i;
-                    li.innerHTML = `<img src="123" alt=""/>\n<div class="des">\n<p></p>\n<a href="">+ 查看详情</a>\n</div>\n`;
+                    li.innerHTML = `<img src="123" alt=""/>\n<div class="des">\n<p></p>\n<a href="/jsta/product/getProductByProductId?productId=${shopingArr.productId}">+ 查看详情</a>\n</div>\n`;
                     UI.appendChild(li);
                 }
             } else {
@@ -66,5 +68,4 @@ $(function (){
             }
         }
     });
-
 })

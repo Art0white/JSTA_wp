@@ -21,7 +21,6 @@ public interface IProductService extends IService<Product> {
      * @return
      */
     RespBean getProducts();
-
     /**
      * 添加产品
      * @param productParameterVo
@@ -34,4 +33,10 @@ public interface IProductService extends IService<Product> {
      * @return
      */
     RespBean getProductByCategoryId(Integer categoryId);
+    /**
+     * 通过产品id查询其对应的的产品
+     * @param productId
+     * @return
+     */
+    RespBean getProductByProductId(Integer productId);
 }

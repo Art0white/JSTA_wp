@@ -53,4 +53,15 @@ public class ProductController {
         System.out.println(categoryId);
         return productService.getProductByCategoryId(categoryId);
     }
+
+    /**
+     * 通过产品id查询其对应的的产品
+     * @param productId
+     * @return
+     */
+    @RequestMapping(value = "/getProductByProductId", method = RequestMethod.GET)
+    public RespBean getProductByProductId(@RequestParam(value = "productId", required = false)Integer productId){
+        System.out.println(productId);
+        return productService.getProductByProductId(productId);
+    }
 }

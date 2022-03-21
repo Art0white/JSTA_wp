@@ -135,7 +135,6 @@ public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> impl
         }
         return RespBean.success();
     }
-
     /**
      * 通过产品分类id查询其对应的的产品
      * @param categoryId
@@ -148,4 +147,17 @@ public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> impl
         List<Product> products = productMapper.selectList(queryWrapper);
         return RespBean.success(products);
     }
+    /**
+     * 通过产品id查询其对应的的产品
+     * @param productId
+     * @return
+     */
+    @Override
+    public RespBean getProductByProductId(Integer productId) {
+        QueryWrapper<Product> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("product_id",productId);
+        List<Product> products = productMapper.selectList(queryWrapper);
+        return RespBean.success(products);
+    }
+
 }

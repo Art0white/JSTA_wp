@@ -70,15 +70,15 @@
             <li class="now">
                 <a href=""><span>公司简介</span></a>
             </li>
-            <li>
-                <a href=""><span>公司荣誉</span></a>
-            </li>
-            <li>
-                <a href=""><span>公司文化</span></a>
-            </li>
-            <li>
-                <a href=""><span>公司历程</span></a>
-            </li>
+<%--            <li>--%>
+<%--                <a href=""><span>公司荣誉</span></a>--%>
+<%--            </li>--%>
+<%--            <li>--%>
+<%--                <a href=""><span>公司文化</span></a>--%>
+<%--            </li>--%>
+<%--            <li>--%>
+<%--                <a href=""><span>公司历程</span></a>--%>
+<%--            </li>--%>
         </ul>
     </div>
     <div class="scd_r">
