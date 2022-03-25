@@ -153,11 +153,11 @@ public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> impl
      * @return
      */
     @Override
-    public RespBean getProductByProductId(Integer productId) {
+    public List<Product> getProductByProductId(Integer productId) {
         QueryWrapper<Product> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("product_id",productId);
         List<Product> products = productMapper.selectList(queryWrapper);
-        return RespBean.success(products);
+        return products;
     }
 
 }

@@ -1,5 +1,7 @@
 package com.ldz.jsta.controller.fore;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.ldz.jsta.entity.Product;
 import com.ldz.jsta.service.IProductService;
 import com.ldz.jsta.util.RespBean;
 import com.ldz.jsta.vo.ProductParameterVo;
@@ -9,6 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpSession;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -60,8 +67,10 @@ public class ProductController {
      * @return
      */
     @RequestMapping(value = "/getProductByProductId", method = RequestMethod.GET)
-    public RespBean getProductByProductId(@RequestParam(value = "productId", required = false)Integer productId){
-        System.out.println(productId);
-        return productService.getProductByProductId(productId);
+    public ModelAndView getProductByProductId(@RequestParam(value = "productId", required = false)Integer productId, HttpSession session, Map<String, Object> map){
+        List<Product> dtlProductList = productService.getProductByProductId(productId);
+        map.put("dtlProductList", dtlProductList);
+        return new ModelAndView("fore/proDtlPage");
+        //return productService.getProductByProductId(productId);
     }
 }

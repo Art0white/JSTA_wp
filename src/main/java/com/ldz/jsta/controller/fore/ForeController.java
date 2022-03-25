@@ -78,7 +78,6 @@ public class ForeController extends BaseController {
 //        return modelAndView;
         return "fore/contactPage";
     }
-
     /**
      * 转到前台架上添安-错误页
      * @return
