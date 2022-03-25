@@ -60,7 +60,7 @@ $(function (){
                 for(let i = 0; i < shopingArr.length; i++) {
                     var li = document.createElement("li");
                     li.id = "li" + i;
-                    li.innerHTML = `<img src="123" alt=""/>\n<div class="des">\n<p></p>\n<a href="/jsta/product/getProductByProductId?productId=${shopingArr.productId}">+ 查看详情</a>\n</div>\n`;
+                    li.innerHTML = `<img src="/jsta/res/images/fore/WebsiteImage/ourShow/sh1.png" alt=""/>\n<div class="des">\n<p></p>\n<a href="/jsta/product/getProductByProductId?productId=${shopingArr[i].productId}">+ 查看详情</a>\n</div>\n`;
                     UI.appendChild(li);
                 }
             } else {
