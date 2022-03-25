@@ -80,20 +80,6 @@
 		<div class="scd_m">
 			<div class="news" id="news">
 
-<%--				<dl class="clearfix" id="clearfix">--%>
-<%--					<dt><a href=""><img src="Assets/upload/pic11.jpg" alt=""/></a></dt>--%>
-<%--					<dd>--%>
-<%--						<div class="title">--%>
-<%--							<p><a href="">工业机器人</a></p>--%>
-<%--							<em>2015-10-15</em>--%>
-<%--						</div>--%>
-<%--						<div class="des">工业机器人是面向工业领域的多关节机械手或多自由度的机器装置，它能自动执行工作，是靠自身动力和--%>
-<%--							控制能力来实现各种功能的一种机器。它可以接受人类指挥，也可以按照预先编排的程序运行，现代的工业机--%>
-<%--							器人还可以根据人工智能技术制定的原则纲领行动......</div>--%>
-<%--						<a href="" class="more">+ 查看详情</a>--%>
-<%--					</dd>--%>
-<%--				</dl>--%>
-
 <%--				<div class="space_hx">&nbsp;</div>--%>
 <%--				<div class="pages">--%>
 <%--					<a href="" class="bg">上一页</a>--%>
