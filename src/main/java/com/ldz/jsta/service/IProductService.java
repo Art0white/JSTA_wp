@@ -6,6 +6,8 @@ import com.ldz.jsta.util.RespBean;
 import com.ldz.jsta.vo.ProductParameterVo;
 import com.ldz.jsta.vo.ProductVo;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -38,5 +40,5 @@ public interface IProductService extends IService<Product> {
      * @param productId
      * @return
      */
-    RespBean getProductByProductId(Integer productId);
+    List<Product> getProductByProductId(Integer productId);
 }
