@@ -77,21 +77,21 @@ $(function () {
 });
 
 function getTimer() {
-    var banner = $(".banner");
+    var banner = $(".banner1");
     var sliders = $(".banner_slider>li");
     var color;
     var img = $("#banner" + index);
     $(".banner_main > a").attr("href", "/tmall/product/" + img.attr("name"));
     if (index === 1) {
-        color = "#E8E8E8"; //#0F1322
+        color = "#523b3b";
     } else if (index === 2 || index === 5) {
-        color = "#E8E8E8";
+        color = "#342f2f";
     } else if (index === 3) {
-        color = "#FBB4B0";
+        color = "#f1f6fc";
     } else if (index === 4) {
-        color = "#262C42";
+        color = "#841510";
     } else {
-        color = "#BD160D";
+        color = "#fcfcfc";
     }
     sliders.css("background", "rgba(0,0,0,0.4)");
     $("#slider_" + index).css("background", "rgba(255,255,255,0.4)");

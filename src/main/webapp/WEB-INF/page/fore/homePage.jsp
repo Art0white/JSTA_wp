@@ -126,13 +126,19 @@
 </div>
 <%--  轮播  --%>
 <div class="banner1">
-    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/banner/lb1.png" style="display: block;"/>
+<%--    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/banner/lb1.png" style="display: block;"/>--%>
 <%--    <c:forEach var="product" items="${requestScope.specialProductList}" varStatus="i">--%>
 <%--        <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/banner/42.jpg"--%>
 <%--             name="${product.product_id}" id="banner${i.count}"--%>
 <%--             <c:if test="${i.count == 1}">style="display: block;"</c:if> />--%>
 <%--    </c:forEach>--%>
+    <c:forEach var="i" begin="1" end="6" varStatus="is">
+        <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/banner/lb${i}.png"
+             name="${i}" id="banner${is.count}"
+             style="height: 100%;<c:if test="${is.count == 1}">display: block;</c:if>" />
+    </c:forEach>
 </div>
+
 <div class="banner_main">
     <ul class="banner_slider">
         <li id="slider_1" style="background: rgba(255,255,255,0.4)"></li>
@@ -152,7 +158,7 @@
             <div class='row'>
                 <div class='product--red'>
                     <div class='product_inner'>
-                        <img src='http://r76ab0jr2.hb-bkt.clouddn.com/%E4%BA%A7%E5%93%811.png' width='300'>
+                        <img src='${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourShow/sh1.png' width='300'>
                         <p>移动式脚手架安全防护装置</p>
 <%--                        <p>标签</p>--%>
 <%--                        <p>零售</p>--%>
@@ -165,7 +171,7 @@
                 </div>
                 <div class='product--orange'>
                     <div class='product_inner'>
-                        <img src='http://r76ab0jr2.hb-bkt.clouddn.com/%E4%BA%A7%E5%93%813.png' width='300'>
+                        <img src='${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourShow/sh2.png' width='300'>
                         <p>扣件预警装置</p>
 <%--                        <p>标签</p>--%>
 <%--                        <p>零售</p>--%>
@@ -230,7 +236,7 @@
 <%--                </div>--%>
             </div>
 
-            <div class="more"><a href="">+ 查看更多</a></div>
+            <div class="more"><a href="${pageContext.request.contextPath}/proAll" target="_blank">+ 查看更多</a></div>
         </div>
     </div>
 </div>
@@ -275,34 +281,34 @@
         <ul class="clearfix">
             <li>
                 <a href="">
-                    <img src="http://r76ab0jr2.hb-bkt.clouddn.com/%E5%AE%9E%E7%94%A8%E6%96%B0%E5%9E%8B%E4%B8%93%E5%88%A9.png" alt=""/>
+                    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourGlory/g2.png" alt=""/>
                     <div class="title">获批脚手架安全防护装置专利</div>
                     <p class="des">2021年12月7日,脚手架安全防护装置专...</p>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="http://r76ab0jr2.hb-bkt.clouddn.com/%E5%9B%BD%E5%AE%B6%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83.png" alt=""/>
+                    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourGlory/g1.png" alt=""/>
                     <div class="title">智能扣件松动检测装置知识产权</div>
                     <p class="des">2022年1月19日,团队研发的脚手架扣知...</p>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="http://r76ab0jr2.hb-bkt.clouddn.com/%E7%BB%93%E4%B8%9A%E8%AF%81%E4%B9%A6.png" alt=""/>
+                    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourGlory/g3.png" alt=""/>
                     <div class="title">架上添安项目以优异成绩结业</div>
                     <p class="des">2021年12月31日,架上添安项目在《星火...</p>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="http://r76ab0jr2.hb-bkt.clouddn.com/%E5%AE%89%E5%85%A8%E6%89%A3.png" alt=""/>
+                    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourGlory/g4.png" alt=""/>
                     <div class="title">智能安全扣正在研发中</div>
                     <p class="des">经走访多家建筑工地，均发现脚手架不...</p>
                 </a>
             </li>
         </ul>
-        <div class="more"><a href="">+ 更多新闻</a></div>
+        <div class="more"><a href="${pageContext.request.contextPath}/news" target="_blank">+ 更多新闻</a></div>
     </div>
 </div>
 <%@ include file="include/footer.jsp" %>
