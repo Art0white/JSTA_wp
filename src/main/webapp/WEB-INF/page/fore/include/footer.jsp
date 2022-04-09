@@ -16,7 +16,7 @@
             <a href="http://rule.tmall.com/trulecycle.htm" target="_blank" class="noneStyle">规则意见征集</a>
         </p>
         <p class="footertwo">
-            <a href="http://www.alibabagroup.com/cn/global/home" target="_blank">架上添安集体</a>
+            <a href="${pageContext.request.contextPath}/" target="_blank">架上添安集体</a>
             <a href="http://www.taobao.com" target="_blank">淘宝店铺</a>
             <a href="http://www.tmall.com/" target="_blank">天猫店铺</a>
             <a href="https://www.alipay.com" target="_blank">支付宝</a>
