@@ -158,29 +158,29 @@
             <div class='row'>
                 <div class='product--red'>
                     <div class='product_inner'>
-                        <img src='${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourShow/sh1.png' width='300'>
+                        <img src='http://cdn.drlcloud.top/%E5%AE%98%E7%BD%91%E4%BA%A7%E5%93%812.png' width='300'>
                         <p>移动式脚手架安全防护装置</p>
 <%--                        <p>标签</p>--%>
 <%--                        <p>零售</p>--%>
-                        <button>产品详细</button>
+                        <button onclick="window.location.href='${pageContext.request.contextPath}/product/getProductByProductId?productId=1'" type="button" id="tpro1">产品详细</button>
                     </div>
-                    <div class='product_overlay'>
-                        <h2>产品详细</h2>
-                        <i class='fa fa-check'></i>
-                    </div>
+<%--                    <div class='product_overlay'>--%>
+<%--                        <h2>产品详细</h2>--%>
+<%--                        <i class='fa fa-check'></i>--%>
+<%--                    </div>--%>
                 </div>
                 <div class='product--orange'>
                     <div class='product_inner'>
-                        <img src='${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourShow/sh2.png' width='300'>
+                        <img src='$http://cdn.drlcloud.top/%E5%AE%98%E7%BD%91%E4%BA%A7%E5%93%811.png' width='300'>
                         <p>扣件预警装置</p>
 <%--                        <p>标签</p>--%>
 <%--                        <p>零售</p>--%>
-                        <button>产品详细</button>
+                        <button onclick="window.location.href='${pageContext.request.contextPath}/product/getProductByProductId?productId=2'" type="button" id="tpro2">产品详细</button>
                     </div>
-                    <div class='product_overlay'>
-                        <h2>产品详细</h2>
-                        <i class='fa fa-check'></i>
-                    </div>
+<%--                    <div class='product_overlay'>--%>
+<%--                        <h2>产品详细</h2>--%>
+<%--                        <i class='fa fa-check'></i>--%>
+<%--                    </div>--%>
                 </div>
 <%--                <div class='product--blue'>--%>
 <%--                    <div class='product_inner'>--%>
@@ -280,31 +280,35 @@
     <div class="i_m">
         <ul class="clearfix">
             <li>
-                <a href="">
-                    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourGlory/g2.png" alt=""/>
+                <a href="${pageContext.request.contextPath}/news/getNewsByNewsId?newsId=1">
+<%--                    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourGlory/g2.png" alt=""/>--%>
+                    <img src="http://cdn.drlcloud.top/%E5%9B%BD%E5%AE%B6%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83.png" alt=""/>
                     <div class="title">获批脚手架安全防护装置专利</div>
                     <p class="des">2021年12月7日,脚手架安全防护装置专...</p>
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourGlory/g1.png" alt=""/>
+                <a href="${pageContext.request.contextPath}/news/getNewsByNewsId?newsId=2">
+<%--                    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourGlory/g1.png" alt=""/>--%>
+                    <img src="http://cdn.drlcloud.top/%E5%AE%9E%E4%BE%8B%E6%96%B0%E5%9E%8B%E4%B8%93%E4%B8%9A%E8%AF%81%E4%B9%A6%28%E6%89%B9%E5%87%86%29.png" alt=""/>
                     <div class="title">智能扣件松动检测装置知识产权</div>
                     <p class="des">2022年1月19日,团队研发的脚手架扣知...</p>
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourGlory/g3.png" alt=""/>
+                <a href="${pageContext.request.contextPath}/news/getNewsByNewsId?newsId=3">
+<%--                    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourGlory/g3.png" alt=""/>--%>
+                    <img src="http://cdn.drlcloud.top/%E7%BB%93%E4%B8%9A%E8%AF%81%E4%B9%A6.png" alt=""/>
                     <div class="title">架上添安项目以优异成绩结业</div>
                     <p class="des">2021年12月31日,架上添安项目在《星火...</p>
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourGlory/g4.png" alt=""/>
-                    <div class="title">智能安全扣正在研发中</div>
-                    <p class="des">经走访多家建筑工地，均发现脚手架不...</p>
+                <a href="${pageContext.request.contextPath}/news/getNewsByNewsId?newsId=4">
+<%--                    <img src="${pageContext.request.contextPath}/res/images/fore/WebsiteImage/ourGlory/g4.png" alt=""/>--%>
+                    <img src="http://cdn.drlcloud.top/%E6%99%BA%E8%83%BD%E8%84%9A%E6%89%8B%E6%9E%B6%E5%BA%94%E7%94%A8%E8%AF%81%E6%98%8E.jpg" alt=""/>
+                    <div class="title">脚手架智能防护装置被企业应用</div>
+                    <p class="des">智能脚手架在实际应用中提示作业人员检查...</p>
                 </a>
             </li>
         </ul>
