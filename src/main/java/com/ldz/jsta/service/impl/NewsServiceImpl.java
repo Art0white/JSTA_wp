@@ -3,6 +3,7 @@ package com.ldz.jsta.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ldz.jsta.entity.News;
+import com.ldz.jsta.entity.Product;
 import com.ldz.jsta.mapper.NewsMapper;
 import com.ldz.jsta.service.INewsService;
 import com.ldz.jsta.util.RespBean;
@@ -55,5 +56,18 @@ public class NewsServiceImpl extends ServiceImpl<NewsMapper, News> implements IN
         news.setNewsTitle(newsTitle);
         newsMapper.insert(news);
         return RespBean.success();
+    }
+
+    /**
+     * 通过新闻id查询其对应的的新闻
+     * @param newsId
+     * @return
+     */
+    @Override
+    public List<News> getNewsByNewsId(Integer newsId) {
+        QueryWrapper<News> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("news_id", newsId);
+        List<News> news = newsMapper.selectList(queryWrapper);
+        return news;
     }
 }

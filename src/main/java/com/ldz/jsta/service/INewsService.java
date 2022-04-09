@@ -2,9 +2,11 @@ package com.ldz.jsta.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ldz.jsta.entity.News;
+import com.ldz.jsta.entity.Product;
 import com.ldz.jsta.util.RespBean;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * <p>
@@ -31,4 +33,11 @@ public interface INewsService extends IService<News> {
      * @return
      */
     RespBean addNews(String newsTitle, String newsContent, Date newsDate, String newsImage);
+
+    /**
+     * 通过新闻id查询其对应的的新闻
+     * @param newsId
+     * @return
+     */
+    List<News> getNewsByNewsId(Integer newsId);
 }
